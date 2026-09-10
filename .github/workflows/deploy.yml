@@ -53,18 +53,12 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           script: |
-            # 1. Reiniciar Eureka primero y esperar a que esté disponible
+            sudo systemctl daemon-reload
             sudo systemctl restart eureka
             sleep 15
-
-            # 2. Reiniciar los microservicios de negocio
             sudo systemctl restart ms-usuarios
             sudo systemctl restart ms-catalogo
             sudo systemctl restart ms-recursos
             sleep 15
-
-            # 3. Reiniciar el API Gateway
             sudo systemctl restart api-gateway
-
-            # 4. Mostrar estado de los servicios
             sudo systemctl status eureka ms-usuarios ms-catalogo ms-recursos api-gateway --no-pager
