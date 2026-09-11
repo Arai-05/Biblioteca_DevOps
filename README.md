@@ -66,7 +66,7 @@ El proyecto se encuentra desplegado en una instancia de **Amazon EC2**.
 ## IP pública de la instancia
 
 ```text
-54.88.53.218
+54.147.247.174
 ```
 
 > La IP pública puede cambiar si la instancia EC2 se detiene y vuelve a iniciar, a menos que se utilice una Elastic IP.
@@ -94,7 +94,7 @@ Estas reglas permiten acceder a los servicios desplegados en la instancia EC2 du
 ## Eureka Server
 
 ```text
-http://54.88.53.218:8761
+http://54.147.247.174:8761
 ```
 
 Desde Eureka es posible comprobar el estado de los distintos servicios registrados.
@@ -104,7 +104,7 @@ Desde Eureka es posible comprobar el estado de los distintos servicios registrad
 ## API Gateway
 
 ```text
-http://54.88.53.218:9000
+http://54.147.247.174:9000
 ```
 
 El API Gateway funciona como punto de entrada principal al sistema.
@@ -114,7 +114,7 @@ El API Gateway funciona como punto de entrada principal al sistema.
 ## MS Usuarios
 
 ```text
-http://54.88.53.218:9001
+http://54.147.247.174:9001
 ```
 
 ---
@@ -122,7 +122,7 @@ http://54.88.53.218:9001
 ## MS Catálogo
 
 ```text
-http://54.88.53.218:9002
+http://54.147.247.174:9002
 ```
 
 ---
@@ -130,7 +130,7 @@ http://54.88.53.218:9002
 ## MS Recursos
 
 ```text
-http://54.88.53.218:9003
+http://54.147.247.174:9003
 ```
 
 ---
@@ -141,7 +141,7 @@ Para el entorno académico del proyecto se utilizan las siguientes credenciales:
 
 ```text
 Usuario: admin
-Contraseña: Duoc.2025
+Contraseña: Duoc.2026
 ```
 
 Estas credenciales corresponden únicamente al ambiente de laboratorio y evaluación.
@@ -524,7 +524,7 @@ Running
 Abrir:
 
 ```text
-http://54.88.53.218:8761
+http://54.147.247.174:8761
 ```
 
 Dentro de Eureka deberían aparecer los servicios registrados.
@@ -536,11 +536,11 @@ Dentro de Eureka deberían aparecer los servicios registrados.
 Comprobar:
 
 ```text
-http://54.88.53.218:9001
+http://54.147.247.174:9001
 
-http://54.88.53.218:9002
+http://54.147.247.174:9002
 
-http://54.88.53.218:9003
+http://54.147.247.174:9003
 ```
 
 ---
@@ -550,7 +550,7 @@ http://54.88.53.218:9003
 Comprobar:
 
 ```text
-http://54.88.53.218:9000
+http://54.147.247.174:9000
 ```
 
 ---
